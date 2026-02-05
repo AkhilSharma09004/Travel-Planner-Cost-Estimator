@@ -12,13 +12,14 @@ if (typeof window !== "undefined") {
 }
 
 
+
 const firebaseConfig = {
-  apiKey: 'AIzaSyCOTzyD9nCW6DaO1sl0e0-4yuNSB0JKUNE',
-  authDomain: 'markit-next-js.firebaseapp.com',
-  projectId: 'markit-next-js',
-  storageBucket: 'markit-next-js.appspot.com',
-  messagingSenderId: '1068467809754',
-  appId: '1:1068467809754:web:80ad8acdcc2670ce09a4e3',
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
 };
 initializeApp(firebaseConfig);
 
